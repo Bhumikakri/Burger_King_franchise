@@ -2,9 +2,11 @@ let checkboxx = [...document.querySelectorAll('input')];
 let btnn = document.querySelector('button');
 let ordersID = document.querySelector('span');
 let foods = document.querySelector(".foodImg");
+let audio = document.querySelector("audio");
 
 btnn.addEventListener('click', (e) =>{
     // console.log(e);
+    audio.play();
     e.preventDefault();
     let AllFood = [];
     checkboxx.forEach((checkbox) => {
@@ -36,7 +38,6 @@ btnn.addEventListener('click', (e) =>{
             else if(orderedItem == "drinks"){
                 foods.src = "https://th.bing.com/th/id/OIP.VGOo7UyTCRr7UvSzPC5KSwHaFi?pid=ImgDet&rs=1"
             }
-
             foods.style.display = "inline-block";
             btnn.disabled = false;
         });
