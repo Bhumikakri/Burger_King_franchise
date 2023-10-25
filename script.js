@@ -36,10 +36,11 @@ btnn.addEventListener('click', (e) =>{
                 foods.src = "https://th.bing.com/th/id/OIP.XeT3Q7d34b2Ltdax5wK9_wHaHl?pid=ImgDet&rs=1";
             }
             else if(orderedItem == "drinks"){
-                foods.src = "https://th.bing.com/th/id/OIP.VGOo7UyTCRr7UvSzPC5KSwHaFi?pid=ImgDet&rs=1"
+                foods.src = "https://th.bing.com/th/id/OIP.VGOo7UyTCRr7UvSzPC5KSwHaFi?pid=ImgDet&rs=1";
             }
             foods.style.display = "inline-block";
             btnn.disabled = false;
         });
     });
 });
+
